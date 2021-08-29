@@ -1,0 +1,28 @@
+{
+  "name": "@bancodecv/root",
+  "version": "1.0.0",
+  "description": "Desafio Gama Experience jobNet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dikasudre/bancodecv.git"
+  },
+  "keywords": [
+    "gama",
+    "nodejs",
+    "api",
+    "rest",
+    "reactjs",
+    "nextjs",
+    "chakra-ui"
+  ],
+  "author": "Lucileide Sudré",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dikasudre/bancodecv/issues"
+  },
+  "homepage": "https://github.com/dikasudre/bancodecv#readme"
+}

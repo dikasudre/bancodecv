@@ -1,0 +1,17 @@
+{
+  "name": "@bancodecv/server",
+  "version": "1.0.0",
+  "description": "API para cadastro de currículos",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "api",
+    "rest",
+    "mvc"
+  ],
+  "author": "Lucileide Sudré",
+  "license": "MIT"
+}
