@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/dikasudre/bancodecv/issues"
   },
-  "homepage": "https://github.com/dikasudre/bancodecv#readme"
+  "homepage": "https://github.com/dikasudre/bancodecv#readme",
+  "dependencies": {
+
+  }
 }

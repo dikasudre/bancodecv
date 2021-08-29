@@ -1,17 +1,11 @@
 import { Router } from 'express';
+import CandidateController from './app/controller/CandidateController';
+import validateValidaCpf from './app/validators/ValidaCpf';
 
 const routes = new Router();
 
-routes.post('/candidates', (req, res) => {
-   res.json({message: 'Registrar Candidato'});
-});
+routes.post('/candidates', validateValidaCpf, CandidateController.store);
 
-routes.get('/candidates', (req, res) => {
-    res.json({message: 'Listar candidatos'});
-});
-
-routes.get('/candidates/:id', (req, res) => {
-    res.json({message: 'Busca candidato'});
-});
+routes.get('/candidates', CandidateController.list);
 
 export default routes;

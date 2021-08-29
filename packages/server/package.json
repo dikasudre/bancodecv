@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon -r esm .",
+    "dev:debug": "nodemon --inspect -r esm .",
     "start": "node -r esm ."
   },
   "keywords": [
@@ -21,7 +22,9 @@
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "mongoose": "^6.0.2",
-    "swagger-ui-express": "^4.1.6"
+    "swagger-ui-express": "^4.1.6",
+    "cpf-cnpj-validator": "^1.0.3",
+    "yup": "^0.32.9"    
   },
   "devDependencies": {
     "@types/swagger-ui-express": "^4.1.3",
