@@ -2,9 +2,11 @@
   "name": "@bancodecv/server",
   "version": "1.0.0",
   "description": "API para cadastro de currículos",
-  "main": "server.js",
+  "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon -r esm .",
+    "start": "node -r esm ."
   },
   "keywords": [
     "nodejs",
@@ -13,5 +15,15 @@
     "mvc"
   ],
   "author": "Lucileide Sudré",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.2"
+  },
+  "devDependencies": {
+    "esm": "^3.2.25",
+    "nodemon": "^2.0.12"
+  }
 }
