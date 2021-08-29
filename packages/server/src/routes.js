@@ -2,15 +2,15 @@ import { Router } from 'express';
 
 const routes = new Router();
 
-routes.get('/registrar', (req, res) => {
+routes.post('/candidates', (req, res) => {
    res.json({message: 'Registrar Candidato'});
 });
 
-routes.get('/candidatos', (req, res) => {
+routes.get('/candidates', (req, res) => {
     res.json({message: 'Listar candidatos'});
 });
 
-routes.get('/candidatos/:id', (req, res) => {
+routes.get('/candidates/:id', (req, res) => {
     res.json({message: 'Busca candidato'});
 });
 

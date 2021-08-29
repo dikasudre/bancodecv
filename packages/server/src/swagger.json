@@ -1,0 +1,182 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "JobsNet Banco de Talentos",
+        "description": "Api para cadastro de CV",
+        "version": "1.0.0",
+        "contact": {
+            "email": "lucileidedacome@hotmail.com"
+        }
+    },
+    "paths": {
+        "/candidates": {
+            "post": {
+                "tags": ["Candidates"],
+                "summary": "Registra um candidato",
+                "description": "Registra um novo candidato para o banco de talentos",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "name": {
+                                       "type": "string" 
+                                    },
+                                    "dtBorn": {
+                                        "type": "date"
+                                    },
+                                    "street": {
+                                        "type": "string"
+                                    },
+                                    "number": {
+                                        "type": "int"
+                                    },
+                                    "district": {
+                                        "type": "string"
+                                    },
+                                    "city": {
+                                        "type": "string"
+                                    },
+                                    "state": {
+                                        "type": "string"
+                                    },
+                                    "postalCode": {
+                                        "type": "string"
+                                    },
+                                    "phone": {
+                                        "type": "string"
+                                    },
+                                    "email": {
+                                        "type": "string"
+                                    },
+                                    "role": {
+                                        "type": "string"
+                                    },
+                                    "rg": {
+                                        "type": "string"
+                                    },
+                                    "cpf": {
+                                        "type": "string"
+                                    },
+                                    "gender": {
+                                        "type": "string"
+                                    },
+                                    "civilStatus": {
+                                        "type": "string"
+                                    },
+                                    "hasCar": {
+                                        "type": "boolean"
+                                    },
+                                    "driveLicense": {
+                                        "type": "boolean"
+                                    }
+                                },
+                                "example": {
+                                    "name": "Julia Roberts",
+                                    "dtBorn": "1967-10-28",
+                                    "street": "Rua Comendador Joaquim Alves",
+                                    "number": 0,
+                                    "district": "Jundiaí",
+                                    "city": "Anápolis",
+                                    "state": "GO",
+                                    "postalCode": "75110-130",
+                                    "phone": "(33) 94524-0466",
+                                    "email": "jr@email.com",
+                                    "role": "Diretora de Criação",
+                                    "rg": "23.448.977-7",
+                                    "cpf": "979.962.200-00",
+                                    "gender": "Feminino",
+                                    "civilStatus": "Casado(a)",
+                                    "hasCar": true,
+                                    "driveLicense": true
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Created"
+                    },
+                    "500": {
+                        "descrition": "Candidate already exists"
+                    }
+                }
+            },
+            "get": {
+                "tags": ["Candidates"],
+                "summary": "Listagem de candidatos",
+                "description": "Lista todos os candidatos cadastrados no sistema",
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "name": {
+                                                "type": "string" 
+                                             },
+                                             "dtBorn": {
+                                                 "type": "date"
+                                             },
+                                             "street": {
+                                                 "type": "string"
+                                             },
+                                             "number": {
+                                                 "type": "int"
+                                             },
+                                             "district": {
+                                                 "type": "string"
+                                             },
+                                             "city": {
+                                                 "type": "string"
+                                             },
+                                             "state": {
+                                                 "type": "string"
+                                             },
+                                             "postalCode": {
+                                                 "type": "string"
+                                             },
+                                             "phone": {
+                                                 "type": "string"
+                                             },
+                                             "email": {
+                                                 "type": "string"
+                                             },
+                                             "role": {
+                                                 "type": "string"
+                                             },
+                                             "rg": {
+                                                 "type": "string"
+                                             },
+                                             "cpf": {
+                                                 "type": "string"
+                                             },
+                                             "gender": {
+                                                 "type": "string"
+                                             },
+                                             "civilStatus": {
+                                                 "type": "string"
+                                             },
+                                             "hasCar": {
+                                                 "type": "boolean"
+                                             },
+                                             "driveLicense": {
+                                                 "type": "boolean"
+                                             }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        } 
+    }
+}
